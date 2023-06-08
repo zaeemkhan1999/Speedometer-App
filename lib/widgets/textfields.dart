@@ -13,7 +13,7 @@ class TextFields {
       ),
       child: TextField(
         controller: controller,
-        style: const TextStyle(color: Colors.white),
+        // style: const TextStyle(color: ),
         obscureText: obsecure ?? false,
         decoration: InputDecoration(
           hintText: hint,

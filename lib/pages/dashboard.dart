@@ -130,7 +130,7 @@ class _DashboardPageState extends State<DashboardPage> {
     Widget displaySpeedometer() => SizedBox(
           height: ScreenConfig.screenSizeHeight * 0.32,
           child: SfRadialGauge(
-            backgroundColor: Colors.black,
+            //backgroundColor: Colors.black,
             animationDuration: 3000,
             enableLoadingAnimation: true,
             axes: <RadialAxis>[
@@ -194,7 +194,7 @@ class _DashboardPageState extends State<DashboardPage> {
         );
 
     return Scaffold(
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {

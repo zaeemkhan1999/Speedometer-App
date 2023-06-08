@@ -26,6 +26,29 @@ class MyApp extends StatelessWidget {
         title: 'Flutter speedometer',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+          brightness: Brightness.light,
+          primaryColor: Colors.blueGrey,
+          textTheme: const TextTheme(
+            bodyMedium: TextStyle(color: Colors.black),
+            bodyLarge: TextStyle(color: Colors.black, fontSize: 30),
+          ),
+          scaffoldBackgroundColor: Colors.white,
+          inputDecorationTheme: InputDecorationTheme(
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10.0),
+              gapPadding: 0.0,
+            ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10.0),
+              gapPadding: 0.0,
+            ),
+          ),
+          hintColor: Colors.grey.shade800,
+          primarySwatch: Colors.blueGrey,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        darkTheme: ThemeData(
+          brightness: Brightness.dark,
           primaryColor: Colors.blueGrey,
           textTheme: const TextTheme(
             bodyMedium: TextStyle(color: Colors.white),
@@ -46,6 +69,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blueGrey,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
+        themeMode: ThemeMode.system,
         home: const HomePage(),
       ),
     );
